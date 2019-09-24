@@ -19,8 +19,9 @@
 - This unique address is put into a header that prefixes any data sent over the network.
 - So, computers simply listen to the ethernet cable, and only process data when they see their address in the header.
 - This works really well; every computer made today comes with its own unique MAC address for both Ethernet and WiFi.
-- The general term for this approach is **Carrier** Sense Multiple Access, or CSMA for short.
-- The **“carrier”**, in this case, is any shared transmission medium that carries data – copper wire in the case of ethernet, and the air carrying radio waves for WiFi.
+
+> The general term for this approach is **Carrier** Sense Multiple Access, or CSMA for short.
+> The **“carrier”**, in this case, is any shared transmission medium that carries data – copper wire in the case of ethernet, and the air carrying radio waves for WiFi.
 
 ## Collison and Back off
 
@@ -68,8 +69,10 @@
 - For example, there might be 5 telephone lines running between Indianapolis and Missoula.
 - If John picked up the phone wanting to call Hank, in the 1910s, John would tell a human operator where he wanted to call, and they’d physically connect John’s phone line into an unused line running to Missoula.
 - For the length of the call, that line was occupied, and if all 5 lines were already in use, John would have to wait for one to become free.
-- This approach is called **Circuit Switching**, because you’re literally switching whole circuits to route traffic to the correct destination.
-- It works fine, but it’s relatively inflexible and expensive, because there’s often unused capacity.
+
+> This approach is called **Circuit Switching**, because you’re literally switching whole circuits to route traffic to the correct destination.
+> It works fine, but it’s relatively inflexible and expensive, because there’s often unused capacity.
+
 - On the upside, once you have a line to yourself – or if you have the money to buy one for your private use – you can use it to its full capacity, without having to share.
 - For this reason, the military, banks and other high importance operations still buy dedicated circuits to connect their data centers.
 - Another approach for getting data from one place to another is **Message Switching**, which is sort of like how the postal system works.
@@ -91,8 +94,10 @@
 - Even if you have a tiny, one kilobyte email trying to get through, it either has to wait for the big file transfer to finish or take a less efficient route.
 - That’s bad.
 - The solution is to chop up big transmissions into many small pieces, called **packets**.
-- Just like with Message Switching, each packet contains a destination address on the network, so routers know where to forward them.
-- This format is defined by the “Internet Protocol”, or IP for short, a standard created in the 1970s.
+
+> Just like with Message Switching, each packet contains a destination address on the network, so routers know where to forward them.
+> This format is defined by the “Internet Protocol”, or IP for short, a standard created in the 1970s.
+
 - Every computer connected to a network gets an **IP Address**.
 - You’ve probably seen these as four, 8-bit numbers written with dots in between.
 - For example,172.217.7.238 is an IP Address for one of Google’s servers.
@@ -102,8 +107,10 @@
 - This opens the possibility of packets arriving at their destination out of order, which is a problem for some applications.
 - Fortunately, there are protocols that run on top of IP, like **TCP/IP**, that handle this issue.
 - We’ll talk more about that next week.
+
 > Chopping up data into small packets, and passing these along flexible routes with spare capacity, is so efficient and fault-tolerant, it’s what the whole internet runs on today.
 > This routing approach is called **Packet Switching**.
+
 - It also has the nice property of being decentralized, with no central authority or single point of failure.
 - In fact, the threat of nuclear attack is why packet switching was developed during the cold war! Today, routers all over the globe work cooperatively to find efficient routings, exchanging information with each other using special protocols, like the Internet Control Message Protocol (ICMP) and the Border Gateway Protocol (BGP).
 - The world's first packet-switched network, and the ancestor to the modern internet, was the **ARPANET**, named after the US agency that funded it, the Advanced Research Projects Agency.
@@ -112,7 +119,7 @@
 - They also plugged in one or more computers – you can see PDP-1’s, IBM System 360s, and even an ATLAS in London connected over a satellite link.
 - Obviously the internet has grown by leaps and bounds in the decades since.
 - Today, instead of a few dozen computers online, it’s estimated to be nearing 10 billion.
-- And it continues to grow rapidly, especially with the advent of wifi-connected refrigerators and other smart appliances, forming an “internet of things”.
+- And it continues to grow rapidly, especially with the advent of wifi-connected refrigerators and other smart appliances, forming an “**internet of things**”.
 - So that’s part one – an overview of computer networks.
 - Is it a series of tubes? Well, sort of.
 - Next week we’ll tackle some higher-level transmission protocols, slowly working our way up to the World Wide Web.
