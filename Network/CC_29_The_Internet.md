@@ -109,6 +109,7 @@
 - Then, there are even lower level domains, called subdomains, like images.google.com, store.dftba.com.
 - And this tree is absolutely HUGE! Like I said, more than 300 million domain names, and that's just second level domain names, not all the sub domains.
 - For this reason, this data is distributed across many DNS servers, which are authorities for different parts of the tree.
+## OSI 7 layers
 - Okay, I know you’ve been waiting for it... We’ve reached a **new level of abstraction!** 
 - Over the past two episodes, we’ve worked up from electrical signals on wires, or radio signals transmitted through the air in the case of wireless networks.
 - This is called the **Physical Layer**.
