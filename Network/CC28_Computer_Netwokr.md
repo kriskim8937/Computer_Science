@@ -124,3 +124,5 @@
 - Is it a series of tubes? Well, sort of.
 - Next week we’ll tackle some higher-level transmission protocols, slowly working our way up to the World Wide Web.
 
+## Reference
+- https://www.youtube.com/watch?v=3QhU9jd03a0
