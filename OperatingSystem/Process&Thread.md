@@ -87,4 +87,26 @@ PC 값은 스레드가 명령어의 어디까지 수행하였는지를 나타나
 |10| Processes don’t share the memory with any other process. | Threads share the memory with other threads of the same process|
 |11| Process have overhead.. | Threads have no overhead. |
 > Threads are used for small tasks, whereas processes are used for more ‘heavyweight’ tasks – basically the execution of applications. Another difference between thread and process is that threads within the same process share the same address space, whereas different processes do not.
+## Process_Scheduling
 
+## Context Switching
+## Context Switching Triggers
+There are three major triggers for context switching. These are given as follows:
+
+Multitasking: In a multitasking environment, a process is switched out of the CPU so another process can be run. The state of the old process is saved and the state of the new process is loaded. On a pre-emptive system, processes may be switched out by the scheduler.
+
+Interrupt Handling: The hardware switches a part of the context when an interrupt occurs. This happens automatically. Only some of the context is changed to minimize the time required to handle the interrupt.
+
+User and Kernel Mode Switching: A context switch may take place when a transition between the user mode and kernel mode is required in the operating system.
+
+## Context Switching Steps
+The steps involved in context switching are as follows:
+
+- Save the context of the process that is currently running on the CPU. Update the process control block and other important fields.
+- Move the process control block of the above process into the relevant queue such as the ready queue, I/O queue etc.
+- Select a new process for execution.
+- Update the process control block of the selected process. This includes updating the process state to running.
+- Update the memory management data structures as required.
+- Restore the context of the process that was previously running when it is loaded again on the processor. This is done by loading the previous values of the process control block and registers.
+## Context Switching Cost
+- Context Switching leads to an overhead cost because of TLB flushes, sharing the cache between multiple tasks, running the task scheduler etc. Context switching between two threads of the same process is faster than between two different processes as threads have the same virtual memory maps. Because of this TLB flushing is not required.
