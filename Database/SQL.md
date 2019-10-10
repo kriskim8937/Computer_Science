@@ -16,17 +16,29 @@
 
 
 ## Oracle
-### introduction / 데이터 베이스 및 RDBMS의 기본 개념 파악, SQL 기본 명령어
-#### 데이터 베이스
+### 1 introduction / 데이터 베이스 및 RDBMS의 기본 개념 파악, SQL 기본 명령어
+#### 1-1 데이터 베이스
 - 데이터 베이스란 Intefrated data, Stored data, Operational data, Shared data 4가지 의미
 - 데이터 베이스는 Real-time accessibility, Countinous evolution, Concurrent sharing, Content reference 해야한다.
 - 데이터 베이스 구성요소 3가지
   - Entity - 학생
   - Attribute  - 학번, 이름 ,학년, 성적 등 
   - Relationship : 개체 간, 개체와 속성간의 관계
-### RDBMS
-- 데이터베이스 관리 시스템은 파일 시스템이 갖는 단저임 `데이터의 종속성 및 중복성` 문제를 해결하기 위해 제안된 
-
+#### 1-2 RDBMS
+- 데이터베이스 관리 시스템은 파일 시스템이 갖는 단저임 **데이터의 종속성 및 중복성** 문제를 해결하기 위해 제안된 시스템
+- ERD 구성요소
+  - 개체
+  - 관계
+  - 속성
+  - ERD 함수성
+    -one-to-one/one-to-many/many-to-many
+- RDBMS 용어 : table/ row/ column / field/ primary key/ foreign key
+- RDBMS 객체 : table/ view/ sequence/ index/ synonym/ program unit
+- ORDBMS : 각 데이터의 연관성을 독립된 객체 형식으로 지원하여, 이를 특정 속성에 종속하여 사용하게 함으로써 기존 RDB의 JOIN 대체, 한 필드에 여러 값 포함을 가능하게 하는 새로운 DBMS이다
+### 1-3 SQL 개요
+- SQL : 오라클 RDMS와 통신하여 데이터를 처리하기 위한 명령언어 RDBMS를 사용하기 위해 ANSI에서 책정한 표준언어
+- SQL PLUS : SQL
+-
 ## select 실행순서 FWGHSO
 1. FROM 절에서 테이블의 목록을 가져옴
 2. WHERE 절에서 검색 조건에 불일치 하는 행 제외
