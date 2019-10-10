@@ -1,30 +1,3 @@
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/ssafyhrm?useUniCode=yes&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-spring.datasource.username=ssafy
-spring.datasource.password=ssafy
-
-'chaelyn', 'CREATE DATABASE `chaelyn` 
-/*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION=\'N\' */'
-
-'books', 'CREATE TABLE `books`
- (\n  `isbn` varchar(50) NOT NULL,\n
-   `title` varchar(100) NOT NULL,\n
-     `author` varchar(50) NOT NULL,\n
-       `publisher` varchar(50) NOT NULL,\n
-         `price` int(8) NOT NULL,\n 
-          `quantity` int(8) NOT NULL,\n
-            PRIMARY KEY (`isbn`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8'
-
-```
-maven repository 
-
-
-sql injection -> mssql -> Statement
-id=safsdf&pass=asfsafas or 1=1
-
-CallableStatement extends PrepareStatement extends Statement
-
-
 ## select 실행순서 FWGHSO
 1. FROM 절에서 테이블의 목록을 가져옴
 2. WHERE 절에서 검색 조건에 불일치 하는 행 제외
