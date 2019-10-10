@@ -41,3 +41,28 @@ CallableStatement extends PrepareStatement extends Statement
 4. GROUP BY
 5. HAVING
 6. ORDER BY
+## SQL 명령어 종류
+- 정보처리기사, 기업 필기 시험 
+### DML 
+- 새로운 행을 입력하거나, 기존의 행을 수정하거나 원치 않는 데이터를 삭제 하는 등 데이터 조작에 관한 명령어
+- INSERT
+- UPDATE
+- DELETE
+- MERGE
+### DDL
+- 구조를 만든다거나, 구조변경, 삭제 등 데이터 구조에 관한 명령어
+- CREATE
+- ALTER
+- DROP
+- RENAME
+- TRUNCATE
+- COMMENT
+### TCL
+- 논리적인 작업의 단위로 DML에 의해 조작된 결과를 다루는 명령어
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
+### DCL
+- 데이터 베이스에 접근하고 객체들은 사용하도록 권한을 주고 받는 명령어
+- GRANT
+- REVOKE 
