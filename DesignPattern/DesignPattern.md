@@ -12,9 +12,8 @@
 - 검증된 디자인 패턴을 사용하면 높은 완성도의 디자인을 빠른 시간 내에 만들어 낼 수 있다.
 - 좋은 설계나 아키텍처가 패턴이라는 이름으로 명명되어 있다. 개발자는 그 이름만으로도 소프트웨어의 구조를 알 수 있다. 이전 소프트웨어 개발에 사용한 설계나 구조를 쉽게 이해하고, 새로운 소프트웨어로 빠르게 적용 할 수 있다. 
 
-| 생성        | 구조           | 행위  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-ㄹ
+## What is GOF?
+https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm
+
+## Factory pattern
+- create object without exposing the creation logic to the client and refer to newly created object using a common interface.
