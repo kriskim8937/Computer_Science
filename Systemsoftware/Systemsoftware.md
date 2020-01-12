@@ -30,8 +30,15 @@
         > A computer with a 64-bit processor can have a 64-bit or 32-bit version of an operating system installed. However, with a 32-bit operating system, the 64-bit processor would not run at its full capability.
         > On a computer with a 64-bit processor, you cannot run a 16-bit legacy program. Many 32-bit programs works with a 64-bit processor and operating system, but some older 32-bit programs may not function properly, or at all, due to limited or no compatibility.
         > Another big difference between 32-bit processors and 64-bit processors is the maximum amount of memory (RAM) that is supported. 32-bit computers support a maximum of 4 GB (232 bytes) of memory, whereas 64-bit CPUs can address a theoretical maximum of 18 EB (264 bytes). However, the practical limit of 64-bit CPUs (as of 2018) is 8 TB of addressable RAM.
-       - Data formats
-        - integer은 24bit binary number을 가지고 있다. 음수는 2의 보수 형태
-        - floating point hardware은 존재하지 않는다.
-        - 컴퓨터 타입마다 서로 다른 integer size를 가질 수 있다. virtual machine을 포함한 computer hardware들은 거의 항상 processor register나 memory address를 표현하는 방법으로 integer을 사용한다.
+    - Data formats
+      - integer은 24bit binary number을 가지고 있다. 음수는 2의 보수 형태
+      - floating point hardware은 존재하지 않는다.
+      - 컴퓨터 타입마다 서로 다른 integer size를 가질 수 있다. virtual machine을 포함한 computer hardware들은 거의 항상 processor register나 memory address를 표현하는 방법으로 integer을 사용한다.
+    - Instruction Format
+      - 24bit format을 가진다. 8 opcode 1 indexed addressing mode flag bit , 15 address
+    - Addressing Modes
+      - Direct , INdexed
+    - Instruction Set
+      - LDA, LDX, STA, STX, ADD, SUB, MUL, DIV, COMP
+    - Input and Output 
         
