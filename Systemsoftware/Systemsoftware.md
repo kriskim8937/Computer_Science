@@ -25,3 +25,7 @@
         - Linkage register : L 
         - Program counter : PC
         - Statsus word : SW
+      - machine bit 랑 software 32bit 64bit 랑은 무슨 관계일까?
+        > A computer with a 32-bit processor cannot have a 64-bit version of an operating system installed. It can only have a 32-bit version of an operating system installed.
+        > A computer with a 64-bit processor can have a 64-bit or 32-bit version of an operating system installed. However, with a 32-bit operating system, the 64-bit processor would not run at its full capability.
+        > On a computer with a 64-bit processor, you cannot run a 16-bit legacy program. Many 32-bit programs works with a 64-bit processor and operating system, but some older 32-bit programs may not function properly, or at all, due to limited or no compatibility.
