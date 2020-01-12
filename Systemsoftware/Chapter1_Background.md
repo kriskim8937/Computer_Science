@@ -1,6 +1,6 @@
 ## Chapter 1 - Background
-- 1.1 brief introduction to system software and overviw of this book
-  - assmblers, loaders, linkers, macro processors, compilers, operation systems.
+- 1.1 brief introduction to system software and overview of this book
+  - assemblers, loaders, linkers, macro processors, compilers, operation systems.
 - 1.2 relationships between system software and machine architecture
   - System software은 machine dependent하다. System software를 다루면, machine을 다룰 수 밖에 없고 무엇이 fundamental한지 판단하기 힘들다
   - 이러한 문제를 막기위해 SIC를 사용한다. SIC는 가상의 컴퓨터로, 복잡하고 특별한 부분들을 제외하고 가장 기본이되고 많이 쓰이는 기능들을 구현하고 있다. 
